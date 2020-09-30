@@ -5,7 +5,7 @@ export const CardGrid = styled.div`
     display: grid;
     gap: 20px;
     grid-template-columns: repeat(2, 200px);
-    grid-template-rows: 200px;
+    grid-auto-rows: 200px;
     justify-content: center;
   }
 
