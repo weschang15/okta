@@ -1,12 +1,14 @@
 import styled from "styled-components"
 
 export const CardGrid = styled.div`
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 200px;
+  grid-auto-rows: 200px;
+  justify-content: center;
+
   @media (min-width: 479px) {
-    display: grid;
-    gap: 20px;
     grid-template-columns: repeat(2, 200px);
-    grid-auto-rows: 200px;
-    justify-content: center;
   }
 
   @media (min-width: 768px) {
