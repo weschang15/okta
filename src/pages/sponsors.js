@@ -1,7 +1,7 @@
 import React from "react"
 import Layout from "../components/layout"
 import { LogoFarm } from "../components/logo-farm/LogoFarm"
-import Section from "../components/section/section"
+import Section from "../components/section/Section"
 import { SectionContent } from "../components/section/SectionContent"
 import { SectionTitle } from "../components/section/SectionTitle"
 import SEO from "../components/seo"
