@@ -30,6 +30,9 @@ const SponsorsPage = () => {
               View the sponsorship prospectus
             </a>
           </p>
+          <h3 className="text-align-center" style={{ color: "#f89e1c" }}>
+            Platinum Sponsors
+          </h3>
           <LogoFarm />
         </SectionContent>
       </Section>
