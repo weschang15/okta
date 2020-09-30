@@ -1,3 +1,4 @@
+import PropTypes from "prop-types"
 import React from "react"
 import styled from "styled-components"
 import Toggle from "../toggle/Toggle"
@@ -9,13 +10,13 @@ const ModalButton = styled.button`
   width: 100%;
 `
 
-export function ModalToggle({ children, content }) {
+export function ModalToggle({ children, render }) {
   return (
     <Toggle>
       {({ on, toggle }) => {
         return (
           <>
-            {on && <div>{content}</div>}
+            {render({ on, toggle })}
             <ModalButton aria-label="Open modal" onClick={toggle}>
               {children}
             </ModalButton>
@@ -24,4 +25,12 @@ export function ModalToggle({ children, content }) {
       }}
     </Toggle>
   )
+}
+
+ModalToggle.defaultProps = {
+  render: () => null,
+}
+
+ModalToggle.propTypes = {
+  render: PropTypes.func.isRequired,
 }
