@@ -28,6 +28,9 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-plugin-styled-components`,
+    },
+    {
       resolve: `gatsby-plugin-portal`,
       options: {
         key: "portal",
