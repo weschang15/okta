@@ -18,7 +18,7 @@ export function LogoFarm() {
             id
             childImageSharp {
               fluid(maxWidth: 200) {
-                ...GatsbyImageSharpFluid
+                ...GatsbyImageSharpFluid_withWebp
               }
             }
           }
