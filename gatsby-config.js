@@ -37,5 +37,13 @@ module.exports = {
         id: "portal",
       },
     },
+    {
+      resolve: `gatsby-source-graphql`,
+      options: {
+        typeName: `GraphqlZero`,
+        fieldName: `gqlZero`,
+        url: `https://graphqlzero.almansi.me/api`,
+      },
+    },
   ],
 }
